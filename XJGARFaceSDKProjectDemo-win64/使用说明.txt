@@ -1,0 +1,94 @@
+当前Facedemo 演示版本在Windows 7 64bit 测试通过 
+包含21种贴纸、美颜、红润、大眼、瘦脸等美妆算法
+提供人脸关键点定位算法
+提供头部三维姿势检测算法
+提供双边羽化、羽化、锐化、白平衡、亮度对比度调整滤镜
+提供冷酷、健康、祖母绿、怀旧、蜡笔、常青滤镜效果
+提供本地、网络、及服务器三级授权认证
+提供数据加密通信。
+
+
+
+version 8.4: SDK 2.0
+	设计了新的缓存机制，数据载入效率提高，速度提升约30%，优化了内存占用。SDK改为动态链接库方式。
+	提供64bit与32bit两个版本测试程序及SDK，
+	在Think pad W541关独立显卡，开集成显卡单人脸测试：64bit版，55fps， 峰值内存占用145M(最大一个贴纸）；32bit版, 26fps, 峰值内存占用108M(最大一个贴纸测试）
+
+version 8.2: SDK 1.0
+	调整部分模型参数，增加了简单的错误脸判定算法。
+
+version 8.0: SDK 1.0
+	提供SDK开发API的静态库及调用示例代码。动态库版本尚存问题，即将发布。
+	增加了，本地、网络、及服务器三级授权认证模块，增加了对称、非对称加密模块提升认证的安全性，
+	增加了了授权服务器。
+
+
+version 7.2:
+	将角度门限及速度门限参数上调，使得大角度和大速度误差容忍加大
+	运行FaceDemo.exe，默认使用8M模型，
+	将8M模型改名或删除，运行FaceDemo.exe，则使用3M训练模型测试
+
+version 7.0:
+ 人脸模型算法调优，减少了模型数据大小，当前模型含有8M及3M两个版本，
+ 	3M模型与QQ中使用的天天P图人脸效果相近，8M模型优于QQ中效果
+	速度分别为（8M: 11ms,4%错误率 及 3M:5ms 8.5%错误率），
+	
+	8M版本文件：com.xjg.landmark.model.100-50-10-5percent.L100.0-F5-12-4-1.0-4iter2.bin
+	3M版本文件：com.xjg.landmark.model.100-50-10-5percent.L100.0-F5-12-4-1.0-2-2-2iter3.bin
+	运行FaceDemo.exe，默认使用8M模型，
+	将8M模型改名或删除，运行FaceDemo.exe，则使用3M训练模型测试
+
+	FaceDemoFast.exe 不带地标显示，直接显卡输出图形，速度快（适合低性能机器）
+
+
+version 6.9:
+ 优化磨皮、美颜、大眼的图像解析率，美颜效果进一步提升，磨皮算法速度提升5倍
+
+version 6.7:
+ 增加了冷酷、健康、祖母绿、怀旧、蜡笔、常青滤镜效果 (F 健切换滤镜)
+
+version 6.3:
+ 增加了磨皮、美白力度，提升了部分速度
+
+version 5:
+ 改进防抖动程序，使用帧间关联强化脸部追踪，优化关键点坐标位置（解决低头丢失，及错误判断）
+ 改进美白与红润算法
+ 增加磨皮算法、
+ 增加双边羽化、羽化、锐化、白平衡、亮度对比度调整滤镜
+ 修复OpenglES下部分shader不兼容性
+ 运行FaceDemo/FaceDemo.exe 测试
+
+version 4:
+ 增加防抖动程序，优化关键点坐标位置，将VC X64运行库一并打包
+ 运行FaceDemo/FaceDemo.exe 测试
+
+version 3:
+ 调整贴纸参数，优化贴纸定位
+ 运行FaceDemo/FaceDemo.exe 测试
+
+
+
+version 2:
+ 去除了Opengles依赖，改为Opengl依赖，静态链接，不再需要安装Opengl ES模拟器
+ 运行FaceDemo/FaceDemo.exe 测试
+
+
+version 1.1:
+ 运行FaceDemo/SDMFaceSurgeryGles.exe 100关键点库测试
+ 运行XJGFaceDemo/SDMFaceSurgeryGles.exe 68关键点库测试 
+
+
+
+
+version1:
+使用：如果方法一失败，请用方法二
+方法一：
+	1、解压FaceDemo 
+	2、运行目录中FaceDemo.bat 或 FD.exe
+
+方法二：
+	1、解压FaceDemo 
+	2、安装 Mali OpenglES模拟器： Mali_OpenGL_ES_Emulator-v3.0.2.g694a9-Windows-64bit.exe
+	3、将FaceDemo中解压出来的所有内容复制到Mali OpenglES模拟器的安装根目录
+	2、运行Mali OpenglES模拟器根目录中FaceDemo.bat 或 FD.exe
+

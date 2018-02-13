@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{26220062-2C9F-3023-B04F-E72E13ACF9B0}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\thirdPartLibs\freeglut-3.0.0\include;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\thirdPartLibs\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\thirdPartLibs\freeglut-3.0.0\include;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\thirdPartLibs\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\thirdPartLibs\freeglut-3.0.0\include;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\thirdPartLibs\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\thirdPartLibs\freeglut-3.0.0\include;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\thirdPartLibs\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule G:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64 -BG:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64 --check-stamp-file G:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64/CMakeLists.txt;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeLists.txt;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\OpenCVConfig-version.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\OpenCVConfig.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVConfig.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVModules.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVModules-debug.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVModules-release.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule G:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64 -BG:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64 --check-stamp-file G:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64/CMakeLists.txt;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeLists.txt;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\OpenCVConfig-version.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\OpenCVConfig.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVConfig.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVModules.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVModules-debug.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVModules-release.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule G:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64 -BG:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64 --check-stamp-file G:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64/CMakeLists.txt;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeLists.txt;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\OpenCVConfig-version.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\OpenCVConfig.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVConfig.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVModules.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVModules-debug.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVModules-release.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule G:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HG:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64 -BG:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64 --check-stamp-file G:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:/WorkSpace/sdm-master-face-surgery-gles/install=====/XJGSDMFaceSDKProjectDemo-win64/CMakeLists.txt;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeLists.txt;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\OpenCVConfig-version.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\OpenCVConfig.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVConfig.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVModules.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVModules-debug.cmake;G:\3dPartSDK\opencv-3.1.0-windows\build\x64\vc14\lib\OpenCVModules-release.cmake;G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\ZERO_CHECK.vcxproj">
+      <Project>D5715CC8-3F0C-3C59-A9D0-083ED9C214C0</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\libXJGARSDKTest.vcxproj">
+      <Project>5EEA690F-0D60-3A8E-AF72-1CB1DBCD6DA2</Project>
+      <Name>libXJGARSDKTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\libXJGARSDKTest_simple.vcxproj">
+      <Project>E33126F2-9B03-3860-8F90-CEAF4ACC7F25</Project>
+      <Name>libXJGARSDKTest_simple</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

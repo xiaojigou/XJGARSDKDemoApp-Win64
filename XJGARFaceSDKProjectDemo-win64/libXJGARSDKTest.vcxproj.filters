@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\test_XJGARSDK_freeglut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\libVidCapInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\libVidCapInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\XJGArSdk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\WorkSpace\sdm-master-face-surgery-gles\install=====\XJGSDMFaceSDKProjectDemo-win64\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B9477653-8F62-3B5B-BF90-4D9648EBFC5A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4B3F3B19-D929-30C9-8FD6-764C25C7D0DA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

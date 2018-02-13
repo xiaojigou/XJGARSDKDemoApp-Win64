@@ -1,0 +1,17 @@
+
+
+cmake_minimum_required(VERSION 3.4.1)
+
+#project(MyOpenglESTest)
+
+
+file(GLOB ALL_RESOURCE_FOR_SHADER_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
+     ${CMAKE_CURRENT_SOURCE_DIR}/*)
+MESSAGE(STATUS "current bin directory is ${CMAKE_CURRENT_BINARY_DIR}") 
+MESSAGE(STATUS "current source directory is ${CMAKE_CURRENT_SOURCE_DIR}")  
+foreach(ONE_MODEL_FILE ${ALL_RESOURCE_FOR_SHADER_FILES})
+	MESSAGE(STATUS "current copying file is ${ONE_MODEL_FILE}")  
+	file(COPY ${ONE_MODEL_FILE} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+	
+endforeach()
+
