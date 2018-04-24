@@ -1,4 +1,6 @@
-# XJGARSDKDemo
+工程配置
+===============
+
 一、准备工作<br>
 --------------------
 OS: Windows 7及以上版本<br>
@@ -16,8 +18,13 @@ Cmake: 3.6以上版本<br>
 5.生成解决方案，然后设置项目libXJGARSDKTest为启动项目，点击运行项目即可<br>
 ![image](https://github.com/TeacherLuo/XJGARSDKDemoApp-Win64/raw/master/ImageCache/4.png)<br>
 
-API接口：<br>
-----------------
+
+#免费License申请
+====================
+http://www.xiaojigou.cn 首页-》开发包-》说明文档-》XJGARSDK说明文档
+
+#API接口：<br>
+=====================
 注意：SDK中各个函数需要在单一的线程中调用。<br>
 1.	初始化<br>
 >####初始化方法：<br>
