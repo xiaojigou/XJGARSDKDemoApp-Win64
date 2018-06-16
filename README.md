@@ -19,7 +19,7 @@ Cmake: 3.6以上版本<br>
 ![image](https://github.com/TeacherLuo/XJGARSDKDemoApp-Win64/raw/master/ImageCache/4.png)<br>
 
 
-#免费License申请
+#免费License申请、贴纸制作工具地址
 ====================
 http://www.xiaojigou.cn 首页-》开发包-》说明文档-》XJGARSDK说明文档
 
