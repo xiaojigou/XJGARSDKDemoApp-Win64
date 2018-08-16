@@ -1,0 +1,95 @@
+{
+    "kpNum": 68,
+    "name": "mengtu",
+    "partNum": 4,
+    "parts": [
+        {
+            "alignX": 0,
+            "alignY": 0,
+            "background": false,
+            "fixed": false,
+            "folderName": "bizi",
+            "frameDuration": 1,
+            "frameNum": 1,
+            "height": 209,
+            "kpEndInd": 35,
+            "kpIndList": [
+                0
+            ],
+            "kpStInd": 30,
+            "kpUseList": false,
+            "name": "bizi",
+            "width": 391,
+            "xOffsetBBX": 0.3,
+            "xScaleBBX": 9,
+            "yOffsetBBX": 0.4,
+            "yScaleBBX": 7.2
+        },
+        {
+            "alignX": 0,
+            "alignY": 0,
+            "background": false,
+            "fixed": false,
+            "folderName": "erduo",
+            "frameDuration": 18,
+            "frameNum": 18,
+            "height": 196,
+            "kpEndInd": 35,
+            "kpIndList": [
+                0
+            ],
+            "kpStInd": 17,
+            "kpUseList": false,
+            "name": "erduo",
+            "width": 373,
+            "xOffsetBBX": 0,
+            "xScaleBBX": 2.0,
+            "yOffsetBBX": 1.6,
+            "yScaleBBX": 2.0
+        },
+        {
+            "alignX": 0,
+            "alignY": 0,
+            "background": false,
+            "fixed": false,
+            "folderName": "tuzi",
+            "frameDuration": 21,
+            "frameNum": 21,
+            "height": 120,
+            "kpEndInd": 26,
+            "kpIndList": [
+                22,
+                35,
+                16
+            ],
+            "kpStInd": 0,
+            "kpUseList": true,
+            "name": "tuzi",
+            "width": 246,
+            "xOffsetBBX": 0,
+            "xScaleBBX": 2.5,
+            "yOffsetBBX": 1,
+            "yScaleBBX": 1
+        },
+        {
+          "alignX": 0,
+		"alignY": 0,
+		"background": false,
+		"fixed": false,
+		"folderName": "sh",
+		"frameDuration": 25,
+		"frameNum": 25,
+		"height": 190,
+		"kpEndInd": 67,
+		"kpIndList": [0],
+		"kpStInd": 17,
+		"kpUseList": false,
+		"name": "sh",
+		"width": 418,
+		"xOffsetBBX": 0.07309941,
+		"xScaleBBX": 2.4444444,
+		"yOffsetBBX": -0.11486486,
+		"yScaleBBX": 0.8
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+{"kpNum":68,"name":"leisi","partNum":1,"parts":[{"alignX":0,"alignY":0,"background":false,"fixed":false,"folderName":"eye","frameDuration":17,"frameNum":17,"height":457,"kpEndInd":67,"kpIndList":[0],"kpStInd":17,"kpUseList":false,"name":"eye","width":457,"xOffsetBBX":0.13157895,"xScaleBBX":2.6725147,"yOffsetBBX":0.08108108,"yScaleBBX":3.087838}]}

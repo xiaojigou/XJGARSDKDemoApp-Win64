@@ -8,6 +8,8 @@
 #	include <GL/glut.h>
 #endif
 
+//#include <vld.h>
+
 #pragma comment(lib,"glew32.lib")
 
 #include <vector>
@@ -141,6 +143,7 @@ char * g_filterList[] = {
 //};
 char * g_stickPaperList[] = {
 	"stpaper900224",
+	//"caishentest",
 	"angel",
 	"caishen",
 	"cangou",
@@ -183,10 +186,17 @@ void checkKeyInput(int a)
 	}
 	else if (a == 'c') {
 		static int stickPaperIndex = 0;
-		int stickPaperLength = 11;
+		int stickPaperLength = 12;
 		stickPaperIndex++;
 		stickPaperIndex = stickPaperIndex % stickPaperLength;
-		XJGARSDKChangeStickpaper(g_stickPaperList[stickPaperIndex]);
+		if (stickPaperIndex == 11)
+			XJGARSDKSetShowStickerPapers(false);
+		else
+		{
+			XJGARSDKSetShowStickerPapers(true);
+			XJGARSDKChangeStickpaper(g_stickPaperList[stickPaperIndex]);
+
+		}
 	}
 	else if (a == 'f') {
 		static int iSelectedFilter = 0;

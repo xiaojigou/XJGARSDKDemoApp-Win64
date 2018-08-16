@@ -72,8 +72,11 @@ bool bgra2rgb(unsigned char *src, unsigned char *dest, int width, int height)
 
 int main(int argc, char *argv[])
 {
-	const char* licenseText = "Xb2SGQvurZeKn5kjjQr0S5K9skHCzvhIIZs4sVYidel9ZcA/L6SKdN+yrDilBdd2uJMwCiVT+ztQcGajt6jvvAp2pa8BaF5N1gY9guz1/SftQ/gW59NDwcX1WR0ZD9Po";
-	XJGARSDKInitialization(licenseText, "testuser", "测试用户公司");
+	//const char* licenseText = "Xb2SGQvurZeKn5kjjQr0S5K9skHCzvhIIZs4sVYidel9ZcA/L6SKdN+yrDilBdd2uJMwCiVT+ztQcGajt6jvvAp2pa8BaF5N1gY9guz1/SftQ/gW59NDwcX1WR0ZD9Po";
+	//XJGARSDKInitialization(licenseText, "testuser", "测试用户公司");
+
+	std::string licenseText = "hMPthC0oBIbtMp515TWb9jZvrLAKWIMvA4Dhf03n51QvnJr7jZowVe86d0WwU0NK9QGRFaXQn628fRu941qyr3FtsI5R7Y6v1XEpL6YvQNWQCkFEt1SAb0hyawimOYf1tfG2lIaNE63c5e+OxXssOVUWvw8tOr2glVwWVzh79NmZMahrnS8l69SoeoXLMKCYlvAt/qJFFk4+6Aq3QvOv3o72fq5p90yty+YWg7o0HirZpMSP9P5/DHYPFqR/ud7twTJ+Yo2+ZzYvodqRQbGG0HseZn8Xpt7fZdFuZbc2HGRMVk56vNDMRlcGZZXAjENk7m2UMhi1ohhuSf4WmIgXCZFiJXvYFByaY625gXKtEI7+b7t81nWQYHP9BEbzURwL";
+	XJGARSDKInitialization(licenseText.c_str(), "DoctorLuoInvitedUser:teacherluo", "LuoInvitedCompany:www.xiaojigou.cn");
 	InitVideoCapture(g_iCamImgWidth, g_iCamImgHeight);
 	XJGARSDKInitOpenglEnvironment(g_iCamImgWidth, g_iCamImgHeight);
 	XJGARSDKSetOptimizationMode(0);
