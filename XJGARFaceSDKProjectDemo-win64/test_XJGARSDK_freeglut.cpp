@@ -347,9 +347,20 @@ void Draw(void)
 		//RenderImageInGLOffScreenBuf(Image);
 		
 
+
+#ifdef RENDER_TEXTURE_TO_TEXTURE_TEST
+		static int outPutTex = 0;
+		int outPutTex2 = 0;
+		XJGARSDKLoadImageToTexture(g_pImgBufferRGB, g_iCamImgWidth, g_iCamImgHeight, &outPutTex);
+		XJGARSDKSetInputTextrueFlips(0, 1);
+		XJGARSDKRenderGLTexture(outPutTex, g_iCamImgWidth, g_iCamImgHeight, &outPutTex2);
+		XJGARSDKDrawAFullViewTexture(outPutTex2, 0, 0, g_iWindowWith, g_iWindowHeight);
+#else
 		int outPutTex = 0;
 		XJGARSDKRenderImage(g_pImgBufferRGB, g_iCamImgWidth, g_iCamImgHeight, &outPutTex);
 		XJGARSDKDrawAFullViewTexture(outPutTex, 0, 0, g_iWindowWith, g_iWindowHeight);
+#endif
+
 
 		//XJGARSDKRenderImage(g_pImgBufferRGB, g_iCamImgWidth, g_iCamImgHeight);
 	#else
@@ -538,7 +549,7 @@ int main(int argc, char *argv[])
 
 
 	//XJGARSDKSetOptimizationMode(2);//异步线程实现人脸对齐检测的视频模式
-	XJGARSDKSetOptimizationMode(0);//视频模式,默认
+	XJGARSDKSetOptimizationMode(0);//视频模式,默认W
 	//XJGARSDKSetOptimizationMode(1);//图片模式
 
 	initCVEnvironment();
