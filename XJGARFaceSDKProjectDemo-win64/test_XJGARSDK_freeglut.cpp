@@ -143,6 +143,7 @@ char * g_filterList[] = {
 //};
 char * g_stickPaperList[] = {
 	"stpaper900224",
+	"eyes",
 	//"caishentest",
 	"angel",
 	"caishen",
@@ -186,10 +187,10 @@ void checkKeyInput(int a)
 	}
 	else if (a == 'c') {
 		static int stickPaperIndex = 0;
-		int stickPaperLength = 12;
+		int stickPaperLength = 13;
 		stickPaperIndex++;
 		stickPaperIndex = stickPaperIndex % stickPaperLength;
-		if (stickPaperIndex == 11)
+		if (stickPaperIndex == 12)
 			XJGARSDKSetShowStickerPapers(false);
 		else
 		{
@@ -387,6 +388,9 @@ void Draw(void)
 			float targetScaleFactorX, targetScaleFactorY;
 			float faceLandmarks[MAX_FACE_DETECTION_ARRAY_SIZE];
 
+#define XJGARSDKGetTargetResultImgAndLandMarks_TEST
+#ifdef XJGARSDKGetTargetResultImgAndLandMarks_TEST
+			int faceLandmarksNum = 68;
 			int faceNum = XJGARSDKGetTargetResultImgAndLandMarks(g_pImgBufferTargetRGBResult, 0,
 				faceLandmarks, g_iTargetImgWidth, g_iTargetImgHeight, 2,
 				&targetScaleFactorX, &targetScaleFactorY);
@@ -394,23 +398,49 @@ void Draw(void)
 				CV_8UC3, (void*)g_pImgBufferTargetRGBResult);
 			cv::cvtColor(targetResultImg, targetResultImg, CV_RGB2BGR);
 
-			//int faceNum = XJGARSDKGetFaceLandmarks(faceLandmarks);
-
 			if (g_bDrawlandMark)
 			{
 				for (int i = 0; i < faceNum; i++)
 				{
-					for (int j = 0; j < 68; j++)
+					for (int j = 0; j < faceLandmarksNum; j++)
 					{
 						float xTarget = faceLandmarks[i * 136 + j * 2 + 0];
 						float yTarget = faceLandmarks[i * 136 + j * 2 + 1];
 
 						cv::circle(targetResultImg, cv::Point2i(xTarget, yTarget), 1, cv::Scalar(0, 255, 0), 2);
+						//cv::circle(imToshow, cv::Point2i(xTarget, yTarget), 1, cv::Scalar(0, 255, 0), 2);
 					}
 				}
 			}
 			cv::flip(targetResultImg, targetResultImg, 0);
 			cv::imshow("Caputered Result Image", targetResultImg);
+#else
+			int faceLandmarksNum = 81;//or 68
+			//int faceNum = XJGARSDKGetFaceLandmarks(faceLandmarks);
+			int faceNum = XJGARSDKGetFaceLandmarks(faceLandmarksNum,faceLandmarks);
+			cv::Mat imToshow;
+			imToshow = cv::Mat(g_iCamImgHeight, g_iCamImgWidth, CV_8UC3, g_pImgBufferRGB);
+			cv::cvtColor(imToshow, imToshow, CV_RGB2BGR);
+
+			if (g_bDrawlandMark)
+			{
+				for (int i = 0; i < faceNum; i++)
+				{
+					for (int j = 0; j < faceLandmarksNum; j++)
+					{
+						float xTarget = faceLandmarks[i * 136 + j * 2 + 0];
+						float yTarget = g_iCamImgHeight - faceLandmarks[i * 136 + j * 2 + 1];
+
+						//cv::circle(targetResultImg, cv::Point2i(xTarget, yTarget), 1, cv::Scalar(0, 255, 0), 2);
+						cv::circle(imToshow, cv::Point2i(xTarget, yTarget), 1, cv::Scalar(0, 255, 0), 2);
+					}
+				}
+			}
+			cv::imshow("imToshow", imToshow);
+#endif
+			//cv::flip(targetResultImg, targetResultImg, 0);
+			//cv::imshow("Caputered Result Image", targetResultImg);
+
 		}
 
 

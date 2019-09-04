@@ -19,10 +19,10 @@
 		"kpUseList": false,
 		"name": "bizi",
 		"width": 325,
-		"xOffsetBBX": 0.1,
-		"xScaleBBX": 8,
+		"xOffsetBBX": 0.17,
+		"xScaleBBX": 4,
 		"yOffsetBBX": 0,
-		"yScaleBBX": 11
+		"yScaleBBX": 6
 	}, {
 		"alignX": 0,
 		"alignY": 0,
@@ -78,9 +78,9 @@
 		"kpUseList": false,
 		"name": "sh",
 		"width": 389,
-		"xOffsetBBX": 0.3,
-		"xScaleBBX": 13.5,
-		"yOffsetBBX": -0.5,
+		"xOffsetBBX": 0.33,
+		"xScaleBBX": 8.5,
+		"yOffsetBBX":-0.83,
 		"yScaleBBX": 3
 	}, {
 		"alignX": 0,

@@ -14,15 +14,15 @@
             "height": 209,
             "kpEndInd": 35,
             "kpIndList": [
-                0
+                30,32,33,34
             ],
             "kpStInd": 30,
             "kpUseList": false,
             "name": "bizi",
             "width": 391,
-            "xOffsetBBX": 0.3,
+            "xOffsetBBX": 0.33,
             "xScaleBBX": 9,
-            "yOffsetBBX": 0.4,
+            "yOffsetBBX": 0.0,
             "yScaleBBX": 7.2
         },
         {
@@ -86,6 +86,8 @@
 		"kpUseList": false,
 		"name": "sh",
 		"width": 418,
+		"fixCenter": true,
+		"fixCenterIndexList": [30],
 		"xOffsetBBX": 0.07309941,
 		"xScaleBBX": 2.4444444,
 		"yOffsetBBX": -0.11486486,

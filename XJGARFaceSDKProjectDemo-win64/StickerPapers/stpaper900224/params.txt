@@ -55,6 +55,8 @@
 		"kpUseList": false,
 		"name": "huzi",
 		"width": 443,
+		"fixCenter": true,
+		"fixCenterIndexList": [33],
 		"xOffsetBBX": -0.00877193,
 		"xScaleBBX": 4,
 		"yOffsetBBX": -0.3783784,

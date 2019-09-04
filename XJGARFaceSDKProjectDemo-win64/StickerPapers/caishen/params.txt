@@ -17,10 +17,12 @@
 		"kpUseList": false,
 		"name": "huzi",
 		"width": 480,
+		"fixCenter": true,
+		"fixCenterIndexList": [51],
 		"xOffsetBBX": 0.00877193,
 		"xScaleBBX": 2.8070176,
-		"yOffsetBBX": -0.39864865,
-		"yScaleBBX": 1.0608108
+		"yOffsetBBX": 1.33,
+		"yScaleBBX": 0.5608108
 	}, {
 		"alignX": 0,
 		"alignY": 0,
@@ -55,6 +57,8 @@
 		"kpUseList": false,
 		"name": "saihong",
 		"width": 436,
+		"fixCenter": true,
+		"fixCenterIndexList": [30],
 		"xOffsetBBX": -0.0029239766,
 		"xScaleBBX": 2.5497077,
 		"yOffsetBBX": -0.06081081,

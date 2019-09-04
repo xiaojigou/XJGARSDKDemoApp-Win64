@@ -36,6 +36,8 @@
 		"kpUseList": false,
 		"name": "Face",
 		"width": 289,
+		"fixCenter": true,
+		"fixCenterIndexList": [30],
 		"xOffsetBBX": -0.0029239766,
 		"xScaleBBX": 1.6900585,
 		"yOffsetBBX": -0.10135135,

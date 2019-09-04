@@ -36,6 +36,8 @@
 		"kpUseList": false,
 		"name": "yj",
 		"width": 445,
+		"fixCenter": true,
+		"fixCenterIndexList": [27],
 		"xOffsetBBX": -0.04385965,
 		"xScaleBBX": 2.6023393,
 		"yOffsetBBX": 0.3108108,

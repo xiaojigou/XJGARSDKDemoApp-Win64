@@ -1,1 +1,46 @@
-{"kpNum":68,"name":"lvhua","partNum":2,"parts":[{"alignX":0,"alignY":0,"background":false,"fixed":false,"folderName":"lujiao","frameDuration":24,"frameNum":24,"height":211,"kpEndInd":67,"kpIndList":[0],"kpStInd":17,"kpUseList":false,"name":"lujiao","width":335,"xOffsetBBX":0.032163743,"xScaleBBX":1.9590644,"yOffsetBBX":1.1554054,"yScaleBBX":1.4256756},{"alignX":0,"alignY":0,"background":false,"fixed":false,"folderName":"saihong","frameDuration":24,"frameNum":24,"height":221,"kpEndInd":67,"kpIndList":[0],"kpStInd":17,"kpUseList":false,"name":"saihong","width":402,"xOffsetBBX":0.020467836,"xScaleBBX":2.3508773,"yOffsetBBX":-0.013513514,"yScaleBBX":1.4932432}]}
+{
+	"kpNum": 68,
+	"name": "lvhua",
+	"partNum": 2,
+	"parts": [{
+		"alignX": 0,
+		"alignY": 0,
+		"background": false,
+		"fixed": false,
+		"folderName": "lujiao",
+		"frameDuration": 24,
+		"frameNum": 24,
+		"height": 211,
+		"kpEndInd": 67,
+		"kpIndList": [0],
+		"kpStInd": 17,
+		"kpUseList": false,
+		"name": "lujiao",
+		"width": 335,
+		"xOffsetBBX": 0.032163743,
+		"xScaleBBX": 1.9590644,
+		"yOffsetBBX": 1.1554054,
+		"yScaleBBX": 1.4256756
+	}, {
+		"alignX": 0,
+		"alignY": 0,
+		"background": false,
+		"fixed": false,
+		"folderName": "saihong",
+		"frameDuration": 24,
+		"frameNum": 24,
+		"height": 221,
+		"kpEndInd": 67,
+		"kpIndList": [0],
+		"kpStInd": 17,
+		"kpUseList": false,
+		"name": "saihong",
+		"width": 402,
+		"fixCenter": true,
+		"fixCenterIndexList": [30],
+		"xOffsetBBX": 0.020467836,
+		"xScaleBBX": 2.3508773,
+		"yOffsetBBX": -0.013513514,
+		"yScaleBBX": 1.4932432
+	}]
+}

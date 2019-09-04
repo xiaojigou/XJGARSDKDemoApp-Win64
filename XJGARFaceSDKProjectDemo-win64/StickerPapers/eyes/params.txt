@@ -1,0 +1,27 @@
+{
+	"kpNum": 68,
+	"name": "eyes",
+	"partNum": 1,
+	"parts": [{
+		"alignX": 0,
+		"alignY": 0,
+		"background": false,
+		"fixed": false,
+		"folderName": "rapidAddImg_eye.png_0_img",
+		"frameDuration": 1,
+		"frameNum": 1,
+		"height": 100,
+		"kpEndInd": 47,
+		"kpIndList": [0],
+		"kpStInd": 17,
+		"kpUseList": false,
+		"name": "rapidAddImg_eye.png_0_img",
+		"width": 200,
+		"fixCenter": true,
+		"fixCenterIndexList": [27],
+		"xOffsetBBX": 0.0,
+		"xScaleBBX": 1.283432,
+		"yOffsetBBX": 0.0,
+		"yScaleBBX": 0.883432
+	}]
+}
